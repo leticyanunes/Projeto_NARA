@@ -59,7 +59,7 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (Nome, Idade, sexo, Cidade, Estado, Canal_Aquisicao);
 
-LOAD DATA INFILE 'C:/Users/leticya.franca/Downloads/produtos.csv'
+LOAD DATA INFILE 'C:/Users/leticya.franca/Documents/Repo_Senac/Produtos_atualizado'
 INTO TABLE produtos
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
