@@ -16,7 +16,7 @@ Cidade VARCHAR(100),
 estado VARCHAR(2), 
 Canal_Aquisicao VARCHAR(100));
 
-CREATE TABLE vendas ( id INT PRIMARY KEY, 
+CREATE TABLE vendas ( id INT PRIMARY KEY AUTO_INCREMENT, 
 Data_venda DATE, 
 Quantidade INT, 
 ID_Cliente INT,
@@ -26,7 +26,7 @@ FOREIGN KEY (ID_Produto) REFERENCES produtos(id),
 Canal VARCHAR(100), 
 Valor_Total DECIMAL(10,2));
 
-CREATE TABLE atendimentos ( id INT PRIMARY KEY, 
+CREATE TABLE atendimentos ( id INT PRIMARY KEY AUTO_INCREMENT, 
 ID_Cliente INT,
 FOREIGN KEY (ID_Cliente) REFERENCES clientes(id),  
 Tipo VARCHAR(100), 
@@ -41,7 +41,7 @@ Data_Fim DATE,
 Tipo_Campanha VARCHAR(100),
 Custo DECIMAL(10,2));
 
-CREATE TABLE avaliacoes ( id INT PRIMARY KEY,  
+CREATE TABLE avaliacoes ( id INT PRIMARY KEY AUTO_INCREMENT,  
 ID_Cliente INT,
 FOREIGN KEY (ID_Cliente) REFERENCES clientes(id), 
 ID_Produto INT, 
@@ -66,7 +66,7 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (Nome_Produto, Categoria, Preco, Marca);
 
-LOAD DATA INFILE 'C:\Users\leticya.franca\Downloads\vendas.csv'
+LOAD DATA INFILE 'C:/Users/leticya.franca/Downloads/vendas.csv'
 INTO TABLE vendas
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
@@ -115,7 +115,7 @@ SELECT clientes.Sexo, clientes.Idade, clientes.Cidade, vendas.Canal,
         SUM(vendas.Valor_Total) AS Valor_Total_Compras
         FROM vendas
         JOIN clientes ON vendas.ID_Cliente = clientes.id
-        GROUP BY clientes.Sexo, clientes.Idade, cliemtes.Cidade, vendas.Canal
+        GROUP BY clientes.Sexo, clientes.Idade, clientes.Cidade, vendas.Canal
         ORDER BY Valor_Total_Compras DESC;
         
 # Produtos com desempenho abaixo do esperado
