@@ -176,21 +176,6 @@ SELECT produtos.Nome_Produto, produtos.Preco,
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
 
 
 
