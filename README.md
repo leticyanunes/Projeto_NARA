@@ -127,7 +127,7 @@ Tendência temporal do desempenho geral.
 👩‍💻 Autoras
 
 Letícya Nunes, Estefani Oliveira e Beatriz Paschoal 
-Estudante de Engenharia da Computação e Analista de Dados em formação.
+
 Este projeto integra Python, SQL e Power BI para uma análise completa de um ambiente de varejo multicanal.
 
 
