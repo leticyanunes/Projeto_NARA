@@ -1,12 +1,3 @@
-Perfeito! Agora que eu vi o PDF do projeto completo que você fez (com contexto, problemas, objetivos, bases de dados etc.), dá para colocar um README mais forte e realista — e incluindo a regressão linear, como você pediu.
-
-Aqui está um README já revisado, resumido, profissional e compatível com o que está no PDF + o que você fez no Python (incluindo regressão).
-
-Você pode colar isso direto no GitHub:
-
-
----
-
 📝 Projeto NARA — Análise de Dados
 
 Este repositório reúne a análise completa realizada para o Projeto NARA, uma varejista multicanal fictícia. O objetivo foi explorar dados reais de vendas, clientes, campanhas, avaliações e atendimentos para entender o comportamento dos consumidores e apoiar decisões estratégicas.
